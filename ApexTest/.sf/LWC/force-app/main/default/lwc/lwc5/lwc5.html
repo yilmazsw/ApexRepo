@@ -1,0 +1,34 @@
+<template>
+<lightning-card title="Body Mass Calculator" icon-name="utility:capacity_plan" >
+<div class="slds-p-around_medium lgc-bg">
+<lightning-input 
+type="number"
+name="weight" 
+label="Weight (kg)" 
+onchange={handleInputChange1}>
+</lightning-input>
+
+<lightning-input 
+type="number" 
+name="height" 
+label="Height (cm)" 
+onchange={handleInputChange2}>
+</lightning-input>
+
+</div>
+
+<div class="slds-p-around_medium lgc-bg">
+
+<lightning-button 
+
+label="Calculate" 
+onclick={handleButtonClick} 
+></lightning-button>
+</div>
+<div class="slds-p-around_medium lgc-bg">
+<p>{result}</p>
+
+</div>
+
+</lightning-card>
+</template>
